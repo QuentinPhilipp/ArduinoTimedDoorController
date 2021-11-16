@@ -1,5 +1,5 @@
 
-# Arduino timed door controler
+# Arduino timed door controller
 
 This project allows the control of a door with a linear motor. It is built to run independently without any actions.
 
