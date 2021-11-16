@@ -1,5 +1,5 @@
 
-# Arduino timed door controller
+# Arduino timed door controler
 
 This project allows the control of a door with a linear motor. It is built to run independently without any actions.
 
@@ -9,6 +9,15 @@ This project allows the control of a door with a linear motor. It is built to ru
  - Setup the time with `setupHour == true` and then flash it with `setupHour == false`
  - If the closing and opening command are sent at the same time because of a wrong configuration, the default action is to **close** the door. It is a security feature on this project.
  - Connect to the serial port for debugging only. It will print all the status
+
+## Circuit
+![circuit schematic](circuit.png)
+
+## Components
+- Arduino Nano
+- Real Time Clock I2C: DS1307
+- H-Bridge : L298N
+- 12V -> 5V converter
 
 ## Files
 data.h file contains the hours of opening and closing of the door. 
